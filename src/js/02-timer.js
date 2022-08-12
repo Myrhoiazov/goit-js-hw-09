@@ -63,10 +63,10 @@ function startTimer() {
     }
 
     const timerDuration = convertMs(mlSeconds);
-    RefsTimer.days.textContent = timerDuration.days;
-    RefsTimer.hours.textContent = timerDuration.hours;
-    RefsTimer.minutes.textContent = timerDuration.minutes;
-    RefsTimer.seconds.textContent = timerDuration.seconds;
+    RefsTimer.days.textContent = timerDuration.days.toString().padStart(2, "0");;
+    RefsTimer.hours.textContent = timerDuration.hours.toString().padStart(2, "0");;
+    RefsTimer.minutes.textContent = timerDuration.minutes.toString().padStart(2, "0");;
+    RefsTimer.seconds.textContent = timerDuration.seconds.toString().padStart(2, "0");;
   }, 1000);
 }
 
